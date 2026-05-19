@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G00FWK1GLP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G00FWK1GLP');
+</script>
+<title>Why Fractional | FAQ — dw CMO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#00272e;--teal-l:#003840;--blue:#27aae1;--blue-d:#1a8cbd;--blue-pale:#e8f6fd;--cream:#faf9f7;--warm:#f3f1ec;--gutter:48px;--max:1100px}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#fff;color:var(--teal);overflow-x:hidden}
+.display{font-family:'Cormorant Garamond',serif}
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.divider{width:44px;height:2px;background:var(--blue);border-radius:2px;margin:16px 0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter);width:100%}
+.btn-p{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;border:none;padding:14px 28px;border-radius:3px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;cursor:pointer;transition:background .2s,transform .15s;text-decoration:none;white-space:nowrap}
+.btn-p:hover{background:var(--blue-d);transform:translateY(-1px)}
+.btn-t{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:#fff;border:none;padding:14px 28px;border-radius:3px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;cursor:pointer;transition:background .2s,transform .15s;text-decoration:none}
+.btn-t:hover{background:var(--teal-l);transform:translateY(-1px)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .3s,box-shadow .3s}
+nav.scrolled{background:rgba(255,255,255,.97);box-shadow:0 1px 0 rgba(0,39,46,.08);backdrop-filter:blur(8px)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{font-size:15px;color:rgba(255,255,255,.78);background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;padding:4px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s;text-decoration:none}
+.nl:hover{color:#fff;border-bottom-color:var(--blue)}
+.nl.active{color:#fff;border-bottom-color:var(--blue)}
+nav.scrolled .nl{color:rgba(0,39,46,.7)}
+nav.scrolled .nl:hover,.nl.active.scrolled{color:var(--teal);border-bottom-color:var(--blue)}
+.logo-mark .letter{fill:#fff;transition:fill .3s}
+.logo-mark .accent{fill:#27aae1}
+nav.scrolled .logo-mark .letter{fill:#00272e}
+.problem-card{background:var(--cream);border:1px solid rgba(0,39,46,.07);border-radius:6px;padding:28px 28px 28px 24px;border-left:3px solid var(--blue);transition:transform .2s,box-shadow .2s }
+.problem-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,39,46,.08)}
+.why-card{background:#fff;border:1px solid rgba(0,39,46,.08);border-radius:6px;padding:28px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.why-card:hover{transform:translateY(-3px);box-shadow:0 10px 36px rgba(0,39,46,.09);border-color:rgba(39,170,225,.3)}
+.faq-item{border-bottom:1px solid rgba(0,39,46,.08)}
+.faq-item:first-child{border-top:1px solid rgba(0,39,46,.08)}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:17px;font-weight:500;color:var(--teal);text-align:left;transition:color .2s}
+.faq-q:hover{color:var(--blue)}
+.faq-q.open{color:var(--blue)}
+.faq-icon{flex-shrink:0;width:24px;height:24px;border-radius:50%;border:1.5px solid currentColor;display:flex;align-items:center;justify-content:center;transition:transform .3s,background .2s,border-color .2s}
+.faq-q.open .faq-icon{background:var(--blue);border-color:var(--blue);transform:rotate(45deg)}
+.faq-icon svg{stroke:currentColor;transition:stroke .2s}
+.faq-q.open .faq-icon svg{stroke:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1),padding .3s}
+.faq-a.open{max-height:800px}
+.faq-a-inner{padding:0 0 24px 0;font-size:16px;color:#3d5054;line-height:1.88;font-weight:300}
+.faq-a-inner ul{margin:12px 0 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.faq-a-inner ul li{display:flex;gap:10px;align-items:flex-start}
+.faq-a-inner ul li::before{content:"↗";color:var(--blue);font-weight:500;flex-shrink:0;margin-top:1px}
+.day-bloc{flex:1;padding:24px 28px 24px 0}
+.day-block:not(:last-child){padding-right:40px;border-right:1px solid rgba(0,39,46,.08)}
+.day-block:not(:first-child){padding-left:40px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.fu{opacity:0;animation:fadeUp .7s cubic-bezier(.22,.68,0,1.2) forwards}
+.d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}.d4{animation-delay:.35s}
+@media(max-width:900px){:root{--gutter:20px}.nav-links{display:none}.two-col{grid-template-columns:1fr!important;gap:40px!important}.four-col{grid-template-columns:1fr 1fr!important}.days-row{flex-direction:column!important}.day-block{padding:24px 0!important;border-right:none!important;border-left:none!important;border-bottom:1px solid rgba(0,39,46,.08)}.footer-top{flex-direction:column!important;gap:24px!important}}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <div class="wrap">
+    <div class="nav-inner">
+      <a href="index.html" style="cursor:pointer;flex-shrink:0;text-decoration:none">
+        <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.23 60.53" height="46" width="52">
+          <path class="letter" d="M21.84,10.48L28.23,0v60.14h-13.28c-4.55,0-8.18-1.44-10.88-4.31-2.71-2.88-4.06-6.73-4.06-11.57,0-4.53,1.42-8.25,4.26-11.17,2.84-2.92,6.47-4.38,10.88-4.38,2.05,0,4.28.43,6.69,1.3V10.48ZM21.84,54.92v-19.5c-1.9-.96-3.81-1.44-5.75-1.44-3.03,0-5.45.99-7.24,2.98-1.79,1.98-2.69,4.66-2.69,8.03,0,3.17.78,5.61,2.34,7.32.94,1.03,1.93,1.72,2.98,2.07,1.05.36,2.93.53,5.65.53h4.71Z"/>
+          <path class="letter" d="M27.02,49.65l11.63-20.95h4.51l11.39,20.09,8.64-20.41,4.03,7.01-10.64,24.6h-4.41l-11.31-21.43-12.42,21.43h-1.98"/>
+          <path class="accent" d="M33.41,60.53h13.28l-6.17-13.31c-5.08,9.04-7.11,13.31-7.11,13.31Z"/>
+        </svg>
+      </a>
+      <div class="nav-links" style="display:flex;align-items:center;gap:32px">
+        <a href="index.html#services" class="nl">Services</a>
+        <a href="index.html#about" class="nl">About</a>
+        <a href="#" class="nl active">Why Fractional | FAQ</a>
+        <a href="board-advisor.html" class="nl">Board Advisor</a>
+        <a href="index.html#contact" class="nl">Contact</a>
+        <a href="index.html#contact" class="btn-p" style="padding:10px 22px;font-size:14px">Let's Talk →</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<section style="background:var(--teal);padding:140px 0 96px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(39,170,225,.04) 1px,transparent 1px);background-size:36px 36px;pointer-events:none"></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <p class="eyebrow fu d1" style="margin-bottom:20px">The Case for Fractional</p>
+    <h1 class="display fu d2" style="font-size:clamp(38px,5vw,68px);font-weight:500;color:#fff;line-height:1.08;letter-spacing:-.025em;max-width:760px;margin-bottom:28px">A Full-Time CMO Isn't the Answer.<br><em style="color:rgba(255,255,255,.5)">Neither Is Promoting Your Best Director.</em></h1>
+    <p class="fu d3" style="font-size:17px;color:rgba(255,255,255,.55);line-height:1.85;max-width:580px;font-weight:300;margin-bottom:40px">Full-time CMOs average <strong style="color:rgba(255,255,255,.85);font-weight:500">25.5 months</strong> in role — and take 3 to 6 months to replace once they leave. By the time they're fully calibrated to your business, the window has often already moved.</p>
+    <div class="fu d4" style="display:flex;gap:24px;flex-wrap:wrap">
+      <a href="#why" class="btn-p">Why Fractional Works →</a>
+      <a href="#faq" style="display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.65);font-size:15px;font-weight:400;text-decoration:none;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.3)">Skip to FAQ ↓</a>
+    </div>
+    <p style="margin-top:32px;font-size:12px;color:rgba(255,255,255,.28);letter-spacing:.02em">* Spencer Stuart Annual CMO Survey</p>
+  </div>
+</section>
+<section id="why" style="background:#fff;padding:96px 0">
+  <div class="wrap">
+    <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start">
+      <div>
+        <p class="eyebrow" style="margin-bottom:14px">The Real Problem</p>
+        <h2 class="display" style="font-size:clamp(28px,3.5vw,42px);font-weight:500;color:var(--teal);line-height:1.15;letter-spacing:-.02em;margin-bottom:18px">Your team is capable.<br>The gap is strategic.</h2>
+        <div class="divider"></div>
+        <p style="font-size:16px;color:#3d5054;line-height:1.9;margin-bottom:18px;font-weight:300">Directors and VPs are capable operators. But they haven't seen enough businesses, at enough stages, to architect the kind of strategy your company needs right now. They're running plays. They haven't built the playbook.</p>
+        <p style="font-size:16px;color:#3d5054;line-height:1.9;margin-bottom:18px;font-weight:300">And your CEO, COO, and CFO need a marketing peer in the room — someone who can hold a budget conversation, challenge a forecast, and lead the marcom team with the same credibility and accountability as every other seat at the table.</p>
+        <p style="font-size:17px;font-weight:500;color:var(--teal);line-height:1.6">Fractional is the answer when what you need is senior judgment — applied consistently, without the overhead, the gap risk, or the 90-day ramp.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;padding-top:8px">
+        <div style="background:var(--teal);border-radius:6px;padding:28px">
+          <p style="font-size:13px;font-weight:500;color:var(--blue);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px">The Full-Time CMO Problem</p>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-size:16px;margin-top:1px;flex-shrink:0">→</span><p style="font-size:14px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.65">Average tenure: 25.5 months — then 3–6 months to replace</p></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-size:16px;margin-top:1px;flex-shrink:0">→</span><p style="font-size:14px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.65">$250K–$350K+ salary before benefits and equity</p></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-size:16px;margin-top:1px;flex-shrink:0">→</span><p style="font-size:14px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.65">60–90 days to get fully calibrated to your business</p></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-size:16px;margin-top:1px;flex-shrink:0">→</span><p style="font-size:14px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.65">One company's experience, applied to your unique challenges</p></div>
+          </div>
+        </div>
+        <div style="background:var(--blue-pale);border:1px solid rgba(39,170,225,.2);border-radius:6px;padding:28px">
+          <p style="font-size:13px;font-weight:500;color:var(--blue);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px">The Fractional Advantage</p>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-size:16px;margin-top:1px;flex-shrink:0">✓</span><p style="font-size:14px;color:var(--teal);font-weight:300;line-height:1.65">Active in weeks, not months</p></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-size:16px;margin-top:1px;flex-shrink:0">✓</span><p style="font-size:14px;color:var(--teal);font-weight:300;line-height:1.65">A fraction of full-time cost — with full executive accountability</p></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-size:16px;margin-top:1px;flex-shrink:0">✓</span><p style="font-size:14px;color:var(--teal);font-weight:300;line-height:1.65">Pattern recognition across dozens of businesses and stages</p></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-size:16px;margin-top:1px;flex-shrink:0">✓</span><p style="font-size:14px;color:var(--teal);font-weight:300;line-height:1.65">Scope that adapts as your business evolves</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background:var(--warm);padding:96px 0">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:14px">Why It Works</p>
+    <h2 class="display" style="font-size:clamp(28px,3.5vw,44px);font-weight:500;color:var(--teal);line-height:1.12;letter-spacing:-.02em;margin-bottom:52px;max-width:560px">Four reasons this model outperforms the alternatives.</h2>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
+      <div class="why-card"><div style="width:44px;height:44px;background:var(--teal);border-radius:5px;display:flex;align-items:center;justify-content:center;margin-bottom:18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27aae1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3 class="display" style="font-size:20px;font-weight:500;color:var(--teal);margin-bottom:10px">The Cost Math Is Simple</h3><p style="font-size:14px;color:#3d5054;line-height:1.78;font-weight:300">A full-time CMO costs $250K–$350K+ before benefits and equity. Fractional delivers the same strategic leadership at a fraction of the cost — applied exactly where and when your business needs it.</p></div>
+      <div class="why-card"><div style="width:44px;height:44px;background:var(--teal);border-radius:5px;display:flex;align-items:center;justify-content:center;margin-bottom:18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27aae1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><h3 class="display" style="font-size:20px;font-weight:500;color:var(--teal);margin-bottom:10px">You Get Someone Who's Been There</h3><p style="font-size:14px;color:#3d5054;line-height:1.78;font-weight:300">$34M+ budgets managed. $750M+ in revenue generated across beauty, wellness, lifestyle, and DTC. That perspective arrives on day one — not after a 90-day onboarding.</p></div>
+      <div class="why-card"><div style="width:44px;height:44px;background:var(--teal);border-radius:5px;display:flex;align-items:center;justify-content:center;margin-bottom:18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27aae1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div><h3 class="display" style="font-size:20px;font-weight:500;color:var(--teal);margin-bottom:10px">Your Team Gets Better</h3><p style="font-size:14px;color:#3d5054;line-height:1.78;font-weight:300">Good fractional work doesn't just move strategy forward — it raises your team's ceiling. Directors think bigger. VPs show up stronger in exec conversations. The whole marcom operation sharpens.</p></div>
+      <div class="why-card"><div style="width:44px;height:44px;background:var(--teal);border-radius:5px;display:flex;align-items:center;justify-content:center;margin-bottom:18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#27aae1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div><h3 class="display" style="font-size:20px;font-weight:500;color:var(--teal);margin-bottom:10px">Speed and Flexibility</h3><p style="font-size:14px;color:#3d5054;line-height:1.78;font-weight:300">Full-time hires take months. Fractional starts in weeks. And when scope needs to shift — heavier during a launch, lighter during a reset — the engagement adapts. You're not locked into a job description.</p></div>
+    </div>
+  </div>
+</section>
+<section style="background:var(--teal);padding:96px 0">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:14px">Sound Familiar?</p>
+    <h2 class="display" style="font-size:clamp(28px,3.5vw,44px);font-weight:500;color:#fff;line-height:1.12;letter-spacing:-.02em;margin-bottom:14px;max-width:680px">If Any of These Are True, the Answer Isn't More Marketing.</h2>
+    <p style="font-size:16px;color:rgba(255,255,255,.5);margin-bottom:52px;font-weight:300">It's better strategy.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:56px">
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:28px;border-left:3px solid var(--blue)"><p style="font-size:32px;color:var(--blue);font-weight:300;line-height:1;margin-bottom:14px;font-family:'Cormorant Garamond',serif">01</p><p style="font-size:15px;color:rgba(255,255,255,.72);line-height:1.78;font-weight:300">We have a solid team and a real budget — but no clear picture of what's actually working or how to hold anyone accountable for it.</p></div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:28px;border-left:3px solid var(--blue)"><p style="font-size:32px;color:var(--blue);font-weight:300;line-height:1;margin-bottom:14px;font-family:'Cormorant Garamond',serif">02</p><p style="font-size:15px;color:rgba(255,255,255,.72);line-height:1.78;font-weight:300">We have a strong vision and a great product. What we're missing is the strategy that turns that into predictable, measurable revenue.</p></div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:28px;border-left:3px solid var(--blue)"><p style="font-size:32px;color:var(--blue);font-weight:300;line-height:1;margin-bottom:14px;font-family:'Cormorant Garamond',serif">03</p><p style="font-size:15px;color:rgba(255,255,255,.72);line-height:1.78;font-weight:300">We're in a leadership transition and need someone who can hold the room, lead the team, and keep momentum while we find our footing.</p></div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:28px;border-left:3px solid var(--blue)"><p style="font-size:32px;color:var(--blue);font-weight:300;line-height:1;margin-bottom:14px;font-family:'Cormorant Garamond',serif">04</p><p style="font-size:15px;color:rgba(255,255,255,.72);line-height:1.78;font-weight:300">Our process exists. Our focus, margin, and accountability don't — and we know it.</p></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.1);padding-top:32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px">
+      <p style="font-size:16px;color:rgba(255,255,255,.5);font-style:italic;font-weight:300;max-width:480px">These are symptoms. The underlying issue is almost always strategic. And almost always fixable.</p>
+      <a href="index.html#contact" class="btn-p">Let's Find the Real Problem →</a>
+    </div>
+  </div>
+</section>
+<section style="background:#fff;padding:96px 0">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:14px">What to Expect</p>
+    <h2 class="display" style="font-size:clamp(28px,3.5vw,44px);font-weight:500;color:var(--teal);line-height:1.12;letter-spacing:-.02em;margin-bottom:52px">What the first 90 days look like.</h2>
+    <div class="days-row" style="display:flex;gap:0">
+      <div class="day-block"><p class="display" style="font-size:52px;font-weight:400;color:rgba(0,39,46,.08);line-height:1;margin-bottom:12px">01</p><p style="font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px">Days 1–30</p><h3 class="display" style="font-size:24px;font-weight:500;color:var(--teal);margin-bottom:12px">Audit</h3><p style="font-size:15px;color:#3d5054;line-height:1.85;font-weight:300">I dig into the business — channels, team structure, budget allocation, KPIs, brand positioning, and where the real gaps are hiding. No recommendations yet. Just honest diagnosis.</p></div>
+      <div class="day-block"><p class="display" style="font-size:52px;font-weight:400;color:rgba(0,39,46,.08);line-height:1;margin-bottom:12px">02</p><p style="font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px">Days 31–60</p><h3 class="display" style="font-size:24px;font-weight:500;color:var(--teal);margin-bottom:12px">Strategy</h3><p style="font-size:15px;color:#3d5054;line-height:1.85;font-weight:300">A working strategy built on what the audit revealed. Priorities are set, budget is realigned, and the team understands what we're building toward — and why.</p></div>
+      <div class="day-block"><p class="display" style="font-size:52px;font-weight:400;color:rgba(39,170,225,.2);line-height:1;margin-bottom:12px">03</p><p style="font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);margin-bottom:10px">Days 61–90</p><h3 class="display" style="font-size:24px;font-weight:500;color:var(--teal);margin-bottom:12px">Accountability</h3><p style="font-size:15px;color:#3d5054;line-height:1.85;font-weight:300">The team knows what they own, what success looks like, and how it's being measured. Reporting rhythms are set. The strategy is in motion — not still being debated.</p></div>
+    </div>
+  </div>
+</section>
+<section id="faq" style="background:var(--warm);padding:96px 0">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:280px 1fr;gap:72px;align-items:start">
+      <div style="position:sticky;top:96px">
+        <p class="eyebrow" style="margin-bottom:14px">FAQ</p>
+        <h2 class="display" style="font-size:clamp(26px,3vw,38px);font-weight:500;color:var(--teal);line-height:1.2;letter-spacing:-.02em;margin-bottom:16px">Questions worth answering honestly.</h2>
+        <div class="divider"></div>
+        <p style="font-size:14px;color:#3d5054;line-height:1.78;font-weight:300;margin-bottom:24px">Don't see what you're looking for? The fastest answer is a direct conversation.</p>
+        <a href="index.html#contact" class="btn-t" style="font-size:14px;padding:12px 22px">Ask Directly →</a>
+      </div>
+      <div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">What is a fractional CMO?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">A fractional CMO is a senior marketing executive who works with your company on a part-time, retained basis rather than as a full-time hire. You get the same strategic leadership, executive presence, and accountability — embedded in your business, sitting in your leadership meetings, owning the outcomes — without the full-time salary, benefits, and overhead.<br><br>It's not consulting at arm's length. It's real leadership, applied consistently, with skin in the game.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">How is a fractional CMO different from a marketing agency?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Agencies execute tactics. A fractional CMO owns the strategy.<br><br>The difference in practice: I sit in your leadership meetings, hold the team accountable to outcomes, align the budget to the right priorities, and manage the agencies — not the other way around. An agency's job is to deliver on a brief. My job is to make sure the brief is the right one in the first place.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">How is this different from hiring a full-time CMO?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Three things: cost, speed, and range of experience.<br><br>A full-time CMO in the $250K–$350K+ range takes months to hire and 60–90 days to fully calibrate to your business. A fractional engagement is active in weeks, priced at a fraction of the cost, and brings a pattern-recognition that only comes from having done this across dozens of businesses — not just one or two.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">Do you do execution or just strategy?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Both — in the right proportion.<br><br>Strategy without execution is just a document. I make sure there's a clear plan AND that the team knows exactly what they own, how it's being measured, and where accountability lives. For tactical execution, I work alongside your internal team and any outside vendors or agencies. I'm not building the ads — I'm making sure the right ads are being built, measured correctly, and connected to revenue.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">How do you use AI in your work?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Strategically — which means knowing what to actually use and what to ignore.<br><br>AI is only as valuable as the judgment directing it. In practice, I use AI for:<ul><li>Custom research agents and competitive intelligence</li><li>Audience persona development and refinement</li><li>Focus group simulation and creative concept testing</li><li>Brand positioning and messaging iteration</li><li>Paid media spend analysis and scenario modeling</li><li>Photo, video, and script development</li><li>Rapid content production and creative direction</li></ul><br>The tools do the heavy lifting on volume. The judgment — on what's actually worth building and bringing to market — is still the job.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">What size company is the right fit?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">The sweet spot is growing D2C and consumer brands with a functioning marketing team, a real budget, and genuine growth ambition — but no senior strategist owning the outcome. Typically that means brands doing $2M–$30M who are serious about scaling intentionally.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">How quickly can we get started?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Typically within two weeks of an initial conversation. The first priority is always a diagnostic — understanding where the real gaps are before recommending anything, touching a single budget line, or reorganizing the team.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">How much does a fractional CMO cost?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Engagements are structured in three ways:<ul><li><strong style="color:var(--teal);font-weight:500">Hourly</strong> — for focused advisory, audits, or strategic work on a specific initiative</li><li><strong style="color:var(--teal);font-weight:500">Retainer</strong> — for ongoing embedded leadership, typically 1–3 days per week depending on scope</li><li><strong style="color:var(--teal);font-weight:500">Project-based</strong> — for defined deliverables like a go-to-market plan, brand repositioning, or channel audit</li></ul><br>Pricing is scoped to the actual need. The right starting point is a 20-minute conversation.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">How many clients do you take at once?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Intentionally limited. Three to four active engagements — maximum. This isn't a volume model. When I'm in, I'm actually in.</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background:var(--teal);padding:80px 0">
+  <div class="wrap" style="text-align:center">
+    <h2 class="display" style="font-size:clamp(28px,4vw,46px);font-weight:500;color:#fff;letter-spacing:-.02em;margin-bottom:14px">Still have questions?</h2>
+    <p style="font-size:16px;color:rgba(255,255,255,.52);max-width:480px;margin:0 auto 32px;font-weight:300;line-height:1.78">The fastest way to get answers is a direct conversation. No pitch deck, no obligation — just an honest 20 minutes.</p>
+    <a href="index.html#contact" class="btn-p" style="font-size:15px;padding:15px 34px">Schedule a Discovery Call →</a>
+    <p style="font-size:14px;color:rgba(255,255,255,.28);margin-top:16px">Or reach me directly: dw@dwcmo.com</p>
+  </div>
+</section>
+<footer style="background:#001a1f;padding:44px 0">
+  <div class="wrap">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:24px">
+      <div><div style="margin-bottom:10px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.23 60.53" height="36" width="41"><path fill="#fff" d="M21.84,10.48L28.23,0v60.14h-13.28c-4.55,0-8.18-1.44-10.88-4.31-2.71-2.88-4.06-6.73-4.06-11.57,0-4.53,1.42-8.25,4.26-11.17,2.84-2.92,6.47-4.38,10.88-4.38,2.05,0,4.28.43,6.69,1.3V10.48ZM21.84,54.92v-19.5c-1.9-.96-3.81-1.44-5.75-1.44-3.03,0-5.45.99-7.24,2.98-1.79,1.98-2.69,4.66-2.69,8.03,0,3.17.78,5.61,2.34,7.32.94,1.03,1.93,1.72,2.98,2.07,1.05.36,2.93.53,5.65.53h4.71Z"/><path fill="#fff" d="M27.02,49.65l11.63-20.95h4.51l11.39,20.09,8.64-20.41,4.03,7.01-10.64,24.6h-4.41l-11.31-21.43-12.42,21.43h-1.98"/><path fill="#27aae1" d="M33.41,60.53h13.28l-6.17-13.31c-5.08,9.04-7.11,13.31-7.11,13.31Z"/></svg></div><p style="font-size:14px;color:rgba(255,255,255,.25);font-style:italic">From positioning to performance.</p></div>
+      <div style="display:flex;gap:26px;flex-wrap:wrap;align-items:center"><a href="index.html#services" style="font-size:14px;color:rgba(255,255,255,.35);text-decoration:none">Services</a><a href="index.html#about" style="font-size:14px;color:rgba(255,255,255,.35);text-decoration:none">About</a><a href="#" style="font-size:14px;color:rgba(255,255,255,.35);text-decoration:none">Why Fractional | FAQ</a><a href="index.html#contact" style="font-size:14px;color:rgba(255,255,255,.35);text-decoration:none">Contact</a></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.05);padding-top:20px"><p style="font-size:13px;color:rgba(255,255,255,.2)">© 2025 dw CMO. All rights reserved.</p></div>
+  </div>
+</footer>
+<script>
+window.addEventListener('scroll',function(){var nav=document.getElementById('nav');if(window.scrollY>60){nav.classList.add('scrolled');}else{nav.classList.remove('scrolled');}});
+function toggleFAQ(btn){var answer=btn.nextElementSibling;var isOpen=btn.classList.contains('open');document.querySelectorAll('.faq-q.open').forEach(function(q){q.classList.remove('open');q.nextElementSibling.classList.remove('open');});if(!isOpen){btn.classList.add('open');answer.classList.add('open');}}
+</script>
+</body>
+</html>

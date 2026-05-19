@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G00FWK1GLP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G00FWK1GLP');
+</script>
+<title>Board Advisor & Due Diligence — dw CMO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--teal:#00272e;--teal-l:#003840;--blue:#27aae1;--blue-d:#1a8cbd;--blue-pale:#e8f6fd;--cream:#faf9f7;--warm:#f3f1ec;--gutter:48px;--max:1100px}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#fff;color:var(--teal);overflow-x:hidden}
+.display{font-family:'Cormorant Garamond',serif}
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.divider{width:44px;height:2px;background:var(--blue);border-radius:2px;margin:16px 0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter);width:100%}
+.btn-p{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;border:none;padding:14px 28px;border-radius:3px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;cursor:pointer;transition:background .2s,transform .15s;text-decoration:none;white-space:nowrap}
+.btn-p:hover{background:var(--blue-d);transform:translateY(-1px)}
+.btn-t{display:inline-flex;align-items:center;gap:8px;background:var(--teal);color:#fff;border:none;padding:14px 28px;border-radius:3px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:500;cursor:pointer;transition:background .2s,transform .15s;text-decoration:none}
+.btn-t:hover{background:var(--teal-l);transform:translateY(-1px)}
+.btn-outline-white{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,.8);border:1px solid rgba(255,255,255,.35);padding:14px 28px;border-radius:3px;font-family:'DM Sans',sans-serif;font-size:15px;cursor:pointer;transition:all .2s;text-decoration:none}
+.btn-outline-white:hover{border-color:rgba(255,255,255,.7);color:#fff;transform:translateY(-1px)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .3s,box-shadow .3s}
+nav.scrolled{background:rgba(255,255,255,.97);box-shadow:0 1px 0 rgba(0,39,46,.08);backdrop-filter:blur(8px)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+.nl{font-size:15px;color:rgba(255,255,255,.78);background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;padding:4px 0;border-bottom:1px solid transparent;transition:color .2s,border-color .2s;text-decoration:none}
+.nl:hover{color:#fff;border-bottom-color:var(--blue)}
+.nl.active{color:#fff;border-bottom-color:var(--blue)}
+nav.scrolled .nl{color:rgba(0,39,46,.7)}
+nav.scrolled .nl:hover{color:var(--teal);border-bottom-color:var(--blue)}
+.logo-mark .letter{fill:#fff;transition:fill .3s}
+.logo-mark .accent{fill:#27aae1}
+nav.scrolled .logo-mark .letter{fill:#00272e}
+.pillar{background:var(--cream);border:1px solid rgba(0,39,46,.07);border-radius:6px;padding:32px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.pillar:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,39,46,.1);border-color:rgba(39,170,225,.3)}
+.advisory-card{background:#fff;border:1px solid rgba(0,39,46,.08);border-radius:6px;padding:28px;transition:transform .2s,box-shadow .2s}
+.advisory-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,39,46,.08)}
+.qualifier{display:flex;gap:20px;align-items:flex-start;padding:24px;border-radius:6px;transition:background .2s}
+.qualifier:hover{background:rgba(39,170,225,.06)}
+.faq-item{border-bottom:1px solid rgba(0,39,46,.08)}
+.faq-item:first-child{border-top:1px solid rgba(0,39,46,.08)}
+.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:17px;font-weight:500;color:var(--teal);text-align:left;transition:color .2s}
+.faq-q:hover{color:var(--blue)}
+.faq-q.open{color:var(--blue)}
+.faq-icon{flex-shrink:0;width:24px;height:24px;border-radius:50%;border:1.5px solid currentColor;display:flex;align-items:center;justify-content:center;transition:transform .3s,background .2s}
+.faq-q.open .faq-icon{background:var(--blue);border-color:var(--blue);transform:rotate(45deg)}
+.faq-q.open .faq-icon svg{stroke:#fff}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.4,0,.2,1)}
+.faq-a.open{max-height:600px}
+.faq-a-inner{padding:0 0 24px 0;font-size:16px;color:#3d5054;line-height:1.88;font-weight:300}
+.audit-tag{display:inline-block;background:rgba(39,170,225,.12);color:var(--blue);font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px;white-space:nowrap}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.fu{opacity:0;animation:fadeUp .7s cubic-bezier(.22,.68,0,1.2) forwards}
+.d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}.d4{animation-delay:.35s}
+@media(max-width:900px){:root{--gutter:20px}.nav-links{display:none}.two-col{grid-template-columns:1fr!important;gap:40px!important}.three-col{grid-template-columns:1fr!important}.four-qual{grid-template-columns:1fr!important}.faq-grid{grid-template-columns:1fr!important;gap:32px!important}.footer-top{flex-direction:column!important;gap:24px!important}.audit-tags{gap:8px!important}}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <div class="wrap">
+    <div class="nav-inner">
+      <a href="index.html" style="cursor:pointer;flex-shrink:0;text-decoration:none">
+        <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.23 60.53" height="46" width="52">
+          <path class="letter" d="M21.84,10.48L28.23,0v60.14h-13.28c-4.55,0-8.18-1.44-10.88-4.31-2.71-2.88-4.06-6.73-4.06-11.57,0-4.53,1.42-8.25,4.26-11.17,2.84-2.92,6.47-4.38,10.88-4.38,2.05,0,4.28.43,6.69,1.3V10.48ZM21.84,54.92v-19.5c-1.9-.96-3.81-1.44-5.75-1.44-3.03,0-5.45.99-7.24,2.98-1.79,1.98-2.69,4.66-2.69,8.03,0,3.17.78,5.61,2.34,7.32.94,1.03,1.93,1.72,2.98,2.07,1.05.36,2.93.53,5.65.53h4.71Z"/>
+          <path class="letter" d="M27.02,49.65l11.63-20.95h4.51l11.39,20.09,8.64-20.41,4.03,7.01-10.64,24.6h-4.41l-11.31-21.43-12.42,21.43h-1.98"/>
+          <path class="accent" d="M33.41,60.53h13.28l-6.17-13.31c-5.08,9.04-7.11,13.31-7.11,13.31Z"/>
+        </svg>
+      </a>
+      <div class="nav-links" style="display:flex;align-items:center;gap:32px">
+        <a href="index.html#services" class="nl">Services</a>
+        <a href="index.html#about" class="nl">About</a>
+        <a href="why-fractional.html" class="nl">Why Fractional | FAQ</a>
+        <a href="#" class="nl active">Board Advisor</a>
+        <a href="index.html#contact" class="nl">Contact</a>
+        <a href="index.html#contact" class="btn-p" style="padding:10px 22px;font-size:14px">Let's Talk →</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<section style="background:var(--teal);min-height:72vh;display:flex;align-items:center;padding:140px 0 96px;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;background-image:radial-gradient(rgba(39,170,225,.04) 1px,transparent 1px);background-size:36px 36px;pointer-events:none"></div>
+  <div style="position:absolute;top:-60px;right:-80px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(39,170,225,.07) 0%,transparent 65%);pointer-events:none"></div>
+  <div class="wrap" style="position:relative;z-index:1">
+    <div style="max-width:780px">
+      <p class="eyebrow fu d1" style="margin-bottom:20px">Board Advisor · Due Diligence</p>
+      <h1 class="display fu d2" style="font-size:clamp(34px,4.8vw,64px);font-weight:500;color:#fff;line-height:1.08;letter-spacing:-.025em;margin-bottom:28px">Most Boards Cover Finance, Legal, and Operations.<br><em style="color:rgba(255,255,255,.48)">Marketing Is Often the Largest Budget Line in the Room — and the Least Represented Seat at the Table.</em></h1>
+      <p class="fu d3" style="font-size:17px;color:rgba(255,255,255,.55);line-height:1.85;max-width:580px;margin-bottom:40px;font-weight:300">For D2C brands, marketing spend rivals people costs — and AI, shifting platforms, and changing consumer behavior are rewriting the playbook faster than most leadership teams can track. That's exactly the moment you need senior marketing judgment at the board level.</p>
+      <div class="fu d4" style="display:flex;gap:12px;flex-wrap:wrap">
+        <a href="#contact" class="btn-p">Start a Conversation →</a>
+        <a href="#due-diligence" class="btn-outline-white">Due Diligence ↓</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background:#fff;padding:96px 0">
+  <div class="wrap">
+    <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start">
+      <div>
+        <p class="eyebrow" style="margin-bottom:14px">What's Missing</p>
+        <h2 class="display" style="font-size:clamp(28px,3.5vw,44px);font-weight:500;color:var(--teal);line-height:1.12;letter-spacing:-.02em;margin-bottom:18px">Boards make better decisions when someone in the room has actually built what's being discussed.</h2>
+        <div class="divider"></div>
+        <p style="font-size:16px;color:#3d5054;line-height:1.9;margin-bottom:18px;font-weight:300">Most boards bring strong financial oversight and legal caution. Fewer bring a senior marketing operator who has personally built companies, led teams of 200, managed multi-million dollar budgets, and made the calls that determine whether a consumer brand scales or stalls.</p>
+        <p style="font-size:16px;color:#3d5054;line-height:1.9;margin-bottom:18px;font-weight:300">That gap has a real cost — in strategy, in acquisitions, in the questions that should be getting asked and aren't.</p>
+        <p style="font-size:17px;font-weight:500;color:var(--teal);line-height:1.65;border-left:3px solid var(--blue);padding-left:18px">Darren brings something rare to a board seat: the perspective of someone who has been the founder, the executive, the operator, and the advisor. He's not there to present. He's there to sharpen the thinking in the room.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;padding-top:8px">
+        <div style="background:var(--teal);border-radius:6px;padding:28px 28px 28px 32px">
+          <p class="display" style="font-size:44px;font-weight:500;color:#fff;letter-spacing:-.02em;line-height:1;margin-bottom:8px">25+</p>
+          <p style="font-size:14px;color:rgba(255,255,255,.5);font-weight:300;line-height:1.6">Years building, scaling, and operating consumer brands across beauty, wellness, lifestyle, and DTC</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div style="background:var(--blue-pale);border:1px solid rgba(39,170,225,.2);border-radius:6px;padding:24px"><p class="display" style="font-size:36px;font-weight:500;color:var(--teal);letter-spacing:-.02em;line-height:1;margin-bottom:6px">$750M+</p><p style="font-size:13px;color:#3d5054;font-weight:300;line-height:1.5">Revenue generated across engagements</p></div>
+          <div style="background:var(--blue-pale);border:1px solid rgba(39,170,225,.2);border-radius:6px;padding:24px"><p class="display" style="font-size:36px;font-weight:500;color:var(--teal);letter-spacing:-.02em;line-height:1;margin-bottom:6px">200+</p><p style="font-size:13px;color:#3d5054;font-weight:300;line-height:1.5">Teams led at peak organizational scale</p></div>
+        </div>
+        <div style="background:var(--warm);border-radius:6px;padding:24px;border-left:3px solid var(--blue)">
+          <p style="font-size:13px;font-weight:500;color:var(--blue);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px">Industries</p>
+          <p style="font-size:14px;color:#3d5054;font-weight:300;line-height:1.7">Beauty · Wellness · Lifestyle · DTC · eCommerce · CPG · Hospitality</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background:var(--warm);padding:96px 0">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:14px">What's on the Table</p>
+    <h2 class="display" style="font-size:clamp(28px,3.5vw,44px);font-weight:500;color:var(--teal);line-height:1.12;letter-spacing:-.02em;margin-bottom:14px;max-width:680px">Operator Credibility. Senior Perspective. Zero Theoretical Distance.</h2>
+    <p style="font-size:16px;color:#3d5054;max-width:540px;line-height:1.8;margin-bottom:52px;font-weight:300">The difference between someone who advises on growth and someone who has personally delivered it.</p>
+    <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div class="pillar"><div style="width:46px;height:46px;background:var(--teal);border-radius:5px;display:flex;align-items:center;justify-content:center;margin-bottom:20px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#27aae1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3 class="display" style="font-size:22px;font-weight:500;color:var(--teal);margin-bottom:12px">Commercial Judgment</h3><p style="font-size:15px;color:#3d5054;line-height:1.8;font-weight:300">Revenue growth strategy, DTC and wholesale model fluency, budget prioritization, margin management, and forecasting accountability. The ability to sit in a financial conversation and push back with authority — not just perspective.</p></div>
+      <div class="pillar"><div style="width:46px;height:46px;background:var(--teal);border-radius:5px;display:flex;align-items:center;justify-content:center;margin-bottom:20px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#27aae1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div><h3 class="display" style="font-size:22px;font-weight:500;color:var(--teal);margin-bottom:12px">Brand & Market Fluency</h3><p style="font-size:15px;color:#3d5054;line-height:1.8;font-weight:300">Deep understanding of consumer behavior, brand positioning, and the full digital and experiential channel mix — paid, organic, influencer, affiliate, CRM, and beyond. Knows what drives loyalty and LTV, not just acquisition.</p></div>
+      <div class="pillar"><div style="width:46px;height:46px;background:var(--teal);border-radius:5px;display:flex;align-items:center;justify-content:center;margin-bottom:20px"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#27aae1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3 class="display" style="font-size:22px;font-weight:500;color:var(--teal);margin-bottom:12px">Operator Perspective</h3><p style="font-size:15px;color:#3d5054;line-height:1.8;font-weight:300">Founded, scaled, and operated multiple companies. Led from startup to 200 FTEs. Built and exited. Raised capital. Navigated pivots. Not theoretical — personal. There is a real difference between someone who has advised on growth and someone who has delivered it.</p></div>
+    </div>
+  </div>
+</section>
+<section style="background:var(--teal);padding:96px 0">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:14px">Advisory & Board Experience</p>
+    <h2 class="display" style="font-size:clamp(28px,3.5vw,44px);font-weight:500;color:#fff;line-height:1.12;letter-spacing:-.02em;margin-bottom:14px">Active. Committed. Engaged.</h2>
+    <p style="font-size:16px;color:rgba(255,255,255,.48);max-width:520px;line-height:1.8;margin-bottom:52px;font-weight:300">Current advisory relationships that reflect the type of brands and leaders Darren chooses to work alongside.</p>
+    <div class="three-col" style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px">
+      <div class="advisory-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+          <img src="zox-logo.png" alt="ZOX" style="height:44px;width:auto;object-fit:contain">
+          <span style="font-size:11px;color:var(--blue);font-weight:500;background:rgba(39,170,225,.1);padding:4px 10px;border-radius:20px">6 Years · 2018–Present</span>
+        </div>
+        <p style="font-size:14px;color:#3d5054;line-height:1.78;font-weight:300;margin-bottom:16px">A collectible, purpose-driven consumer brand with a loyal community built around original art and positive messaging.</p>
+        <a href="https://zox.co" target="_blank" style="font-size:13px;color:var(--blue);text-decoration:none;font-weight:500">zox.co →</a>
+      </div>
+      <div class="advisory-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+          <img src="gcu-logo.png" alt="Grand Canyon University" style="height:44px;width:auto;object-fit:contain">
+          <span style="font-size:11px;color:var(--blue);font-weight:500;background:rgba(39,170,225,.1);padding:4px 10px;border-radius:20px">5 Years · 2020–Present</span>
+        </div>
+        <p style="font-size:14px;color:#3d5054;line-height:1.78;font-weight:300;margin-bottom:16px">Colangelo College of Business — advising on business education, conscious capitalism, and student-centered growth strategy.</p>
+        <a href="https://gcu.edu" target="_blank" style="font-size:13px;color:var(--blue);text-decoration:none;font-weight:500">gcu.edu →</a>
+      </div>
+      <div class="advisory-card">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+          <img src="fit-minded-logo.png" alt="Fit Minded" style="height:44px;width:auto;object-fit:contain">
+          <span style="font-size:11px;color:var(--blue);font-weight:500;background:rgba(39,170,225,.1);padding:4px 10px;border-radius:20px">2025–Present</span>
+        </div>
+        <p style="font-size:14px;color:#3d5054;line-height:1.78;font-weight:300;margin-bottom:16px">A science-led research firm that bridges clinical data and business strategy to build credibility and revenue for wellness brands.</p>
+        <a href="https://fit-minded.com" target="_blank" style="font-size:13px;color:var(--blue);text-decoration:none;font-weight:500">fit-minded.com →</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background:#fff;padding:96px 0">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-bottom:14px">Fit Matters</p>
+    <h2 class="display" style="font-size:clamp(28px,3.5vw,44px);font-weight:500;color:var(--teal);line-height:1.12;letter-spacing:-.02em;margin-bottom:14px;max-width:620px">Not every board is the right board.</h2>
+    <p style="font-size:16px;color:#3d5054;max-width:520px;line-height:1.8;margin-bottom:52px;font-weight:300">Darren is selective about where he invests his time and attention. The engagements that work best share four qualities.</p>
+    <div class="four-qual" style="display:grid;grid-template-columns:repeat(2,1fr);gap:4px;background:var(--warm);border-radius:8px;overflow:hidden">
+      <div style="background:#fff;padding:36px 36px 36px 32px;border-right:1px solid var(--warm);border-bottom:1px solid var(--warm)"><div style="width:40px;height:40px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;margin-bottom:18px"><p class="display" style="font-size:18px;font-weight:500;color:#fff;line-height:1">01</p></div><h3 style="font-size:16px;font-weight:500;color:var(--teal);margin-bottom:10px">Conscious Leaders</h3><p style="font-size:15px;color:#3d5054;line-height:1.78;font-weight:300">Leaders who understand that financial performance and people development aren't competing priorities. They're the same priority — and the best companies treat them that way.</p></div>
+      <div style="background:#fff;padding:36px 36px 36px 32px;border-bottom:1px solid var(--warm)"><div style="width:40px;height:40px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;margin-bottom:18px"><p class="display" style="font-size:18px;font-weight:500;color:#fff;line-height:1">02</p></div><h3 style="font-size:16px;font-weight:500;color:var(--teal);margin-bottom:10px">Fast-Moving, High-Trust Teams</h3><p style="font-size:15px;color:#3d5054;line-height:1.78;font-weight:300">Organizations where urgency, alignment, and execution aren't aspirations. They're the operating standard. Teams that move fast because they trust each other — not teams that move slowly because they don't.</p></div>
+      <div style="background:#fff;padding:36px 36px 36px 32px;border-right:1px solid var(--warm)"><div style="width:40px;height:40px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;margin-bottom:18px"><p class="display" style="font-size:18px;font-weight:500;color:#fff;line-height:1">03</p></div><h3 style="font-size:16px;font-weight:500;color:var(--teal);margin-bottom:10px">Operationally Grounded</h3><p style="font-size:15px;color:#3d5054;line-height:1.78;font-weight:300">Companies that run on data, hold themselves to KPIs, and treat continuous improvement as a cultural default — not a quarterly initiative. Rigor as a value, not a system imposed from outside.</p></div>
+      <div style="background:#fff;padding:36px 36px 36px 32px"><div style="width:40px;height:40px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;margin-bottom:18px"><p class="display" style="font-size:18px;font-weight:500;color:#fff;line-height:1">04</p></div><h3 style="font-size:16px;font-weight:500;color:var(--teal);margin-bottom:10px">Leaders Who Want a Marketing Peer</h3><p style="font-size:15px;color:#3d5054;line-height:1.78;font-weight:300">Executives who want a marketing voice at the table that can hold a budget conversation, challenge a growth assumption, and bring strategic clarity to decisions with real stakes — not a brand cheerleader.</p></div>
+    </div>
+  </div>
+</section>
+<section id="due-diligence" style="background:var(--warm);padding:96px 0">
+  <div class="wrap">
+    <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start">
+      <div>
+        <p class="eyebrow" style="margin-bottom:14px">Due Diligence</p>
+        <h2 class="display" style="font-size:clamp(28px,3.5vw,44px);font-weight:500;color:var(--teal);line-height:1.12;letter-spacing:-.02em;margin-bottom:18px">Considering an Acquisition or Sale? Know What You're Actually Buying.</h2>
+        <div class="divider"></div>
+        <p style="font-size:16px;color:#3d5054;line-height:1.9;margin-bottom:18px;font-weight:300">A brand's marketing performance is one of the most misread signals in any deal. Vanity metrics obscure real channel health. Growth numbers hide retention problems. Agency-dependent results don't survive transition.</p>
+        <p style="font-size:16px;color:#3d5054;line-height:1.9;margin-bottom:32px;font-weight:300">Darren provides a structured, senior-led marketing audit for brands in acquisition or sale — delivering a clear picture of where value is real, where it's projected, and where the risk lives.</p>
+        <a href="#contact" class="btn-t">Inquire About Due Diligence →</a>
+      </div>
+      <div>
+        <p style="font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:20px">Audit Covers</p>
+        <div class="audit-tags" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px">
+          <span class="audit-tag">Digital Performance</span><span class="audit-tag">Customer Journey</span><span class="audit-tag">Conversion Analysis</span><span class="audit-tag">ROI by Channel</span><span class="audit-tag">Brand Equity</span><span class="audit-tag">Growth Probability</span><span class="audit-tag">Forecasting</span><span class="audit-tag">Product Positioning</span><span class="audit-tag">Talent Assessment</span><span class="audit-tag">Leadership Review</span><span class="audit-tag">Partnership Health</span><span class="audit-tag">Opportunity Mapping</span>
+        </div>
+        <div style="background:var(--teal);border-radius:6px;padding:28px">
+          <p style="font-size:13px;font-weight:500;color:var(--blue);letter-spacing:.08em;text-transform:uppercase;margin-bottom:14px">How It Works</p>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-weight:500;flex-shrink:0">01</span><p style="font-size:14px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.65">Senior-led review — no junior team, no delegation</p></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-weight:500;flex-shrink:0">02</span><p style="font-size:14px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.65">Full channel and team audit, including digital footprint and customer journey</p></div>
+            <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:var(--blue);font-weight:500;flex-shrink:0">03</span><p style="font-size:14px;color:rgba(255,255,255,.65);font-weight:300;line-height:1.65">Clear deliverable: where value is real, where it's projected, and where risk lives</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="faq" style="background:#fff;padding:96px 0">
+  <div class="wrap">
+    <div class="faq-grid" style="display:grid;grid-template-columns:260px 1fr;gap:72px;align-items:start">
+      <div style="position:sticky;top:96px">
+        <p class="eyebrow" style="margin-bottom:14px">FAQ</p>
+        <h2 class="display" style="font-size:clamp(24px,2.8vw,36px);font-weight:500;color:var(--teal);line-height:1.2;letter-spacing:-.02em;margin-bottom:16px">Common questions, direct answers.</h2>
+        <div class="divider"></div>
+        <p style="font-size:14px;color:#3d5054;line-height:1.78;font-weight:300;margin-bottom:24px">Anything else — reach out directly.</p>
+        <a href="#contact" class="btn-t" style="font-size:14px;padding:12px 22px">Start the Conversation →</a>
+      </div>
+      <div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">What kinds of companies are you looking to advise?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Premium SMB consumer brands — primarily in beauty, wellness, and lifestyle. Companies with real product-market fit, a leadership team that takes governance seriously, and a genuine appetite for growth that's sustainable, not just fast.<br><br>The brands worth advising are the ones run by leaders who want an honest voice in the room — not a validator.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">What does a typical advisory relationship look like?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">It varies by need and stage — but generally monthly or quarterly involvement, direct access for time-sensitive decisions, and active participation in the conversations where a senior marketing perspective actually changes the outcome.<br><br>The goal is to be useful, not ceremonial. If the engagement isn't making a real difference, it's not the right fit.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">Do you take equity-based advisory roles?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Open to discussing. It depends on the brand, the stage, the scope of involvement, and the alignment between the leadership team and how Darren works best.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">Are you open to paid advisory roles, or only board seats?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Both. The right structure depends on the scope of involvement and what genuinely serves the company. Darren is pragmatic about format — the priority is doing work that matters, not fitting a particular title.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">How involved are you in a due diligence engagement?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Fully. This is a structured, personal audit — not a delegation to a junior team.<br><br>Darren reviews the digital footprint, customer journey, channel performance, conversion data, team structure, and growth assumptions directly, and delivers a clear assessment of where value is real and where it's at risk.</div></div></div>
+        <div class="faq-item"><button class="faq-q" onclick="toggleFAQ(this)">How do we start the conversation?<span class="faq-icon"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg></span></button><div class="faq-a"><div class="faq-a-inner">Reach out directly. A 20-minute call is usually enough to know whether there's a fit worth exploring — and Darren won't waste your time if there isn't one.<br><br>dw@dwcmo.com</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" style="background:var(--teal);padding:96px 0">
+  <div class="wrap">
+    <div class="two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center">
+      <div>
+        <p class="eyebrow" style="margin-bottom:14px">Start the Conversation</p>
+        <h2 class="display" style="font-size:clamp(28px,3.5vw,44px);font-weight:500;color:#fff;line-height:1.12;letter-spacing:-.02em;margin-bottom:18px">The right board seat is a two-way decision.</h2>
+        <p style="font-size:16px;color:rgba(255,255,255,.52);line-height:1.85;font-weight:300">If the brand, the leadership team, and the scope of the work are the right fit — the conversation is worth having. If they aren't, Darren will say so directly.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:40px">
+        <p style="font-size:15px;color:rgba(255,255,255,.6);line-height:1.8;font-weight:300;margin-bottom:28px">Send a brief note about your company, the role you're exploring, and what you're hoping to accomplish. A direct response comes within one business day.</p>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <a href="mailto:dw@dwcmo.com" class="btn-p" style="justify-content:center">dw@dwcmo.com →</a>
+          <a href="index.html#contact" class="btn-outline-white" style="justify-content:center">Use the Contact Form</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer style="background:#001a1f;padding:44px 0">
+  <div class="wrap">
+    <div class="footer-top" style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px">
+      <div><div style="margin-bottom:10px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.23 60.53" height="36" width="41"><path fill="#fff" d="M21.84,10.48L28.23,0v60.14h-13.28c-4.55,0-8.18-1.44-10.88-4.31-2.71-2.88-4.06-6.73-4.06-11.57,0-4.53,1.42-8.25,4.26-11.17,2.84-2.92,6.47-4.38,10.88-4.38,2.05,0,4.28.43,6.69,1.3V10.48ZM21.84,54.92v-19.5c-1.9-.96-3.81-1.44-5.75-1.44-3.03,0-5.45.99-7.24,2.98-1.79,1.98-2.69,4.66-2.69,8.03,0,3.17.78,5.61,2.34,7.32.94,1.03,1.93,1.72,2.98,2.07,1.05.36,2.93.53,5.65.53h4.71Z"/><path fill="#fff" d="M27.02,49.65l11.63-20.95h4.51l11.39,20.09,8.64-20.41,4.03,7.01-10.64,24.6h-4.41l-11.31-21.43-12.42,21.43h-1.98"/><path fill="#27aae1" d="M33.41,60.53h13.28l-6.17-13.31c-5.08,9.04-7.11,13.31-7.11,13.31Z"/></svg></div><p style="font-size:14px;color:rgba(255,255,255,.25);font-style:italic">From positioning to performance.</p></div>
+      <div style="display:flex;gap:26px;flex-wrap:wrap;align-items:center"><a href="index.html#services" style="font-size:14px;color:rgba(255,255,255,.35);text-decoration:none">Services</a><a href="index.html#about" style="font-size:14px;color:rgba(255,255,255,.35);text-decoration:none">About</a><a href="why-fractional.html" style="font-size:14px;color:rgba(255,255,255,.35);text-decoration:none">Why Fractional | FAQ</a><a href="#" style="font-size:14px;color:rgba(255,255,255,.35);text-decoration:none">Board Advisor</a><a href="https://www.linkedin.com/in/darren-wilson-dwcmo" target="_blank" style="display:flex;align-items:center;color:rgba(255,255,255,.35);text-decoration:none"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.05);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <p style="font-size:13px;color:rgba(255,255,255,.2)">© 2025 dw CMO. All rights reserved.</p>
+      <div style="display:flex;gap:20px"><span style="font-size:13px;color:rgba(255,255,255,.2)">Privacy Policy</span><span style="font-size:13px;color:rgba(255,255,255,.2)">Fulfillment Policy</span></div>
+    </div>
+  </div>
+</footer>
+<script>
+window.addEventListener('scroll',function(){var nav=document.getElementById('nav');if(window.scrollY>60){nav.classList.add('scrolled');}else{nav.classList.remove('scrolled');}});
+function toggleFAQ(btn){var answer=btn.nextElementSibling;var isOpen=btn.classList.contains('open');document.querySelectorAll('.faq-q.open').forEach(function(q){q.classList.remove('open');q.nextElementSibling.classList.remove('open');});if(!isOpen){btn.classList.add('open');answer.classList.add('open');}}
+</script>
+</body>
+</html>
